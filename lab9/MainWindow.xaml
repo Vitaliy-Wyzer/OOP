@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Students" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ButtonAddStudent" Content="Add student" HorizontalAlignment="Left" Height="51" Margin="12,113,0,0" VerticalAlignment="Top" Width="130" Click="ButtonAddStudent_Click"/>
+        <Button x:Name="ButtonDeleteStudent" Content="Delete Student" HorizontalAlignment="Left" Height="51" Margin="146,113,0,0" VerticalAlignment="Top" Width="129" Click="ButtonDeleteStudent_Click"/>
+        <DataGrid x:Name="DataGridStudents" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,179,10,10"/>
+        <Button x:Name="ButtonAddGrade" Content="Add Grade" HorizontalAlignment="Left" Height="51" Margin="279,113,0,0" VerticalAlignment="Top" Width="130" Click="ButtonAddGrade_Click"/>
+        <Button x:Name="ButtonCloseStream" Content="Close stream" HorizontalAlignment="Left" Margin="424,33,0,0" VerticalAlignment="Top" Width="153"/>
+        <Button x:Name="ButtonLoadAnotherStudent" Content="Load another student" HorizontalAlignment="Left" Margin="424,58,0,0" VerticalAlignment="Top" Width="153"/>
+        <Button x:Name="ButtonLoadTxtStream" Content="Load from txt file (Stream)" HorizontalAlignment="Left" Margin="424,83,0,0" VerticalAlignment="Top" Width="153"/>
+        <Button x:Name="ButtonSaveTxt" Content="Save to txt file" HorizontalAlignment="Left" Margin="424,118,0,0" VerticalAlignment="Top" Width="114" Height="21" Click="ButtonSaveTxt_Click"/>
+        <Button x:Name="ButtonLoadTxt" Content="Load from txt file" HorizontalAlignment="Left" Margin="424,144,0,0" VerticalAlignment="Top" Width="114" Height="21" Click="ButtonLoadTxt_Click"/>
+        <Button x:Name="ButtonSaveXml" Content="Save to XML file" HorizontalAlignment="Left" Margin="543,118,0,0" VerticalAlignment="Top" Width="114" Height="21" Click="ButtonSaveXml_Click"/>
+        <Button x:Name="ButtonLoadXml" Content="Load from XML file" HorizontalAlignment="Left" Margin="543,144,0,0" VerticalAlignment="Top" Width="114" Height="21" Click="ButtonLoadXml_Click"/>
+        <Button x:Name="ButtonSaveJson" Content="Save to JSON file" HorizontalAlignment="Left" Margin="663,118,0,0" VerticalAlignment="Top" Width="114" Height="21" Click="ButtonSaveJson_Click"/>
+        <Button x:Name="ButtonLoadJson" Content="Load from JSON file" HorizontalAlignment="Left" Margin="663,144,0,0" VerticalAlignment="Top" Width="114" Height="21" Click="ButtonLoadJson_Click"/>
+
+    </Grid>
+</Window>
